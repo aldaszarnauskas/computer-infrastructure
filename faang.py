@@ -81,3 +81,8 @@ def plot_data():
     # Explains how to save pyplot figures: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
     # Save the plot in the plots folder
     plt.savefig(f"plots/{current_time}.png")
+
+
+print("""
+Execution of the faang.py has finished. Find the data and a plot in the data and plots folders, respectively.
+""")
