@@ -1,32 +1,23 @@
-# This is a basic workflow that is manually triggered
+# This workflow is triggered every saturday at 8 am UTC time to run faang.py script.
 
-name: Manual workflow
+name: Scheduled Workflow
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
+# Controls when the action will run. Workflow runs on a scheduled day at 8 am UTC
 on:
-  workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
-        # Default value if no value is explicitly provided
-        default: 'World'
-        # Input has to be provided for the workflow to run
-        required: true
-        # The data type of the input
-        type: string
+  schedule:
+    # https://www.edstem.com/Leveraging-GitHub-Actions-for-Scheduled-Workflows/#:~:text=Setting%20Up%20Scheduled%20Workflows,schedule%20using%20the%20schedule%20event.
+    # https://help.qlik.com/en-US/compose/December2024/Content/ComposeDWDL/Main/DW/Cron%20Format%20and%20Examples/cron_format_and_example.htm#:~:text=A%20cron%20expression%20is%20a,special%20characters%20for%20that%20field.
+    - cron: '0 07 * * 6' # Runs every Saturday at 08:00 PM UTC
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
+  # This workflow contains a single job called "plot_stock_price"
+  plot_stock_price:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"
+    - name: Plot FAANG stock price
+      run: python3 faang.py
