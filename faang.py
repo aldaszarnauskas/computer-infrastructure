@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 def get_data():
-    # Explains on how to set parameters for the download function: https://ranaroussi.github.io/yfinance/reference/api/yfinance.Tickers.html#yfinance.Tickers
+    # Explains on how to set parameters for the yfinance download function: https://ranaroussi.github.io/yfinance/reference/api/yfinance.Tickers.html#yfinance.Tickers
     # Dowload the faang data for the last five days in one hour intervals
     faang_data = yf.download(["META", "AAPL", "AMZN", "NFLX", "GOOG"], period='5d', interval='1h')
 
