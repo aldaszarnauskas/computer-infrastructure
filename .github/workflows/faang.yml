@@ -32,8 +32,8 @@ jobs:
         pwd
         pip install -r requirements.txt
 
-    # # Runs a single command using the runners shell
-    # - name: run faang.py 
-    #   run: |
-    #     pwd
-    #     python3 faang.py
+    # Runs a single command using the runners shell
+    - name: run faang.py 
+      run: |
+        pwd
+        python3 faang.py
