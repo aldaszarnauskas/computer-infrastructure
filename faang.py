@@ -83,6 +83,9 @@ def plot_data():
     plt.savefig(f"plots/{current_time}.png")
 
 
+plot_data()
+
+
 print("""
 Execution of the faang.py has finished. Find the data and a plot in the data and plots folders, respectively.
 """)
