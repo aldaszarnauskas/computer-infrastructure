@@ -29,6 +29,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Check the folder structure
-      run: ls ../computer-infrastructure
+      run: cat requirements.txt
     - name: Send greeting
       run: echo "Hello Aldas"
