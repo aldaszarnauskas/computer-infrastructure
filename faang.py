@@ -73,14 +73,14 @@ def plot_data():
 
     plt.legend()
     plt.title(f"{date}")
-    plt.xlabel("Datetime")
+    plt.xlabel("Hourly time axis with daily labels")
     # Explains on how to change xtick arrangement: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xticks.html
     plt.xticks(xtick_location, date_ticks) # The x ticks are divided by date and the tick indicates the first value of the day
-    plt.ylabel("Stock Price")
+    plt.ylabel("An hourly stock closing price ($)")
     plt.legend(bbox_to_anchor=(1.25, 1)) # Set the legend cordinates outside the plot for better presentation
     # Explains how to save pyplot figures: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
     # Save the plot in the plots folder
-    plt.savefig(f"plots/{current_time}.png")
+    plt.savefig(f"plots/{current_time}.png", dpi=300, bbox_inches="tight")
 
 
 plot_data()
