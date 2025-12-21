@@ -50,14 +50,15 @@ All FAANG stock data is retrieved, from the Yahoo Finance's servers, using the `
 
 ## Figures
 
-Here are examples of the plots of the FAANG hourly closing stock prices for the last five days.
+**Here are examples of the plots of the FAANG hourly closing stock prices for the last five days**
 
-| 20251129-081222.png                          | 20251206-081218.png                           |
-| ---------------------------------------- | -------------------------------- |
-| ![Plot 1](/plots/20251129-081222.png)            | ![Plot 2](/plots/20251206-081218.png)  |
-| 20251213-081233.png                          | 20251220-081232.png                           |
-| ---------------------------------------- | -------------------------------- |
-| ![Plot 1](/plots/20251213-081233.png)            | ![Plot 2](/plots/20251220-081232.png)  |
+| November 29, 2025                       | December 6, 2025                        |
+| --------------------------------------- | --------------------------------------- |
+| ![FAANG stocks plot for week ending Nov 29, 2025](/plots/20251129-081222.png) | ![FAANG stocks plot for week ending Dec 6, 2025](/plots/20251206-081218.png) |
+
+| December 13, 2025                       | December 20, 2025                        |
+| --------------------------------------- | --------------------------------------- |
+| ![FAANG stocks plot for week ending Dec 13, 2025](/plots/20251213-081233.png) | ![FAANG stocks plot for week ending Dec 20, 2025](/plots/20251220-081232.png) |
 
 ---
 
