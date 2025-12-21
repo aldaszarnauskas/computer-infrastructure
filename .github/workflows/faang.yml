@@ -7,7 +7,7 @@ on:
   schedule:
     # https://www.edstem.com/Leveraging-GitHub-Actions-for-Scheduled-Workflows/#:~:text=Setting%20Up%20Scheduled%20Workflows,schedule%20using%20the%20schedule%20event.
     # https://help.qlik.com/en-US/compose/December2024/Content/ComposeDWDL/Main/DW/Cron%20Format%20and%20Examples/cron_format_and_example.htm#:~:text=A%20cron%20expression%20is%20a,special%20characters%20for%20that%20field.
-    - cron: '00 08 * * 6' # Runs every Saturday at 08:00 PM UTC
+    - cron: '00 08 * * 6' # Runs every Saturday at 08:00 AM UTC
 
 permissions:
   contents: write
