@@ -82,8 +82,8 @@ Requires **Python 3.10+**.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/yourrepo.git
-   cd yourrepo
+   git clone https://github.com/aldaszarnauskas/computer-infrastructure.git
+   cd computer-infrastructure
    ```
 2. Install the dependencies:
    ```
