@@ -1,4 +1,6 @@
-# Creating a GitHub Actions Workflow (Submission for Computer Infrastructure module)
+# FAANG Stock Tracker — Automated with GitHub Actions
+
+*Submission for the Computer Infrastructure module, ATU*
 
 ![Workflow status](https://github.com/aldaszarnauskas/computer-infrastructure/actions/workflows/faang.yml/badge.svg)
 
